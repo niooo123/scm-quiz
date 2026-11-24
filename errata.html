@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>答案勘误与存疑 · 供应链管理师（三级）</title>
+<style>
+:root{
+    --bg:#f6f7f9; --card:#fff; --line:#e3e6ea; --line2:#eef0f3;
+    --tx:#1f2328; --tx2:#5b6470; --tx3:#8b95a1;
+    --brand:#2b5cd9; --brand-soft:#eef3ff;
+    --ok:#16803c; --ok-bg:#e8f6ec; --ok-line:#b7e0c4;
+    --no:#c92a2a; --no-bg:#fdeeee; --no-line:#f3c2c2;
+    --warn:#a8690a; --warn-bg:#fdf3e3; --warn-line:#f0d7a8;
+  }
+
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--tx);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",Arial,sans-serif;font-size:15px;line-height:1.7;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:860px;margin:0 auto;padding:22px 16px 80px}
+  .back{display:inline-block;margin-bottom:14px;font-size:13px;color:var(--brand);text-decoration:none}
+  h2.sec{font-size:19px;margin:22px 0 8px}
+  h2.sec .cnt{font-size:13px;color:var(--tx3);font-weight:400;margin-left:8px}
+  .hint{font-size:13px;color:var(--tx2);margin:0 0 14px;line-height:1.7}
+  a{color:var(--brand)}
+
+  .item.flash{animation:qflash 2.4s ease}
+  @keyframes qflash{0%,100%{box-shadow:0 0 0 0 rgba(43,92,217,0)}20%,70%{box-shadow:0 0 0 4px rgba(43,92,217,.28)}}
+  .errata-list{display:flex;flex-direction:column;gap:10px}
+  .errata-item{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+  .errata-item.fix{border-left:4px solid var(--no)}
+  .errata-item.doubt{border-left:4px solid var(--warn)}
+  .errata-item .ehead{display:flex;gap:9px;align-items:center;flex-wrap:wrap;margin-bottom:6px}
+  .errata-item .eqn{font-size:12.5px;font-weight:700;color:var(--tx2);background:#f1f3f6;border-radius:7px;padding:1px 9px}
+  .errata-item .elink{margin-left:auto;font-size:12.5px;color:var(--brand);text-decoration:none}
+  .errata-item .estem{font-size:14.5px;line-height:1.65;margin-bottom:6px}
+  .errata-item .erow{font-size:13px;color:var(--tx2);display:flex;gap:14px;flex-wrap:wrap}
+  .errata-item .erow b{color:var(--tx)}
+  .errata-item .ereason{font-size:12.5px;color:var(--tx3);margin-top:5px;line-height:1.65}
+  .errata-item .earrow{color:var(--tx3)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<a class="back" href="index.html">← 返回练习题</a>
+<h2 class="sec" id="errata">答案勘误与存疑　<span class="cnt">勘误 13 题 · 存疑 22 题</span></h2>
+<p class="hint">下列题目来自逐题核对。标记「答案有误」的题，页面已按建议答案判定，并在题头显示「勘误」；标记「答案存疑」的题，页面保留官方答案，仅作提示。判断题、单选题附逐题解析；多选题按需求不附解析，仅列答案勘误。点「定位本题」可直接跳到对应题目。</p>
+<div class="errata-list">
+<div class="errata-item fix">
+  <div class="ehead"><span class="eqn">判断 34</span><span class="ebadge fix">答案有误</span><a class="elink" href="#q-judge-33" onclick="location.href='index.html?q=judge-33';return false;">定位本题 ›</a></div>
+  <div class="estem">针对不同的绩效指标，设定相应的绩效考核标准。其中，标准解决的是我们需要考核“什么”的问题，指标所要解决的是该项考核需要达到的具体标准，即达到什么样的指标值。</div>
+  <div class="erow"><span>官方答案：<b>正确</b></span><span class="earrow">→</span><span>建议答案：<b>错误</b></span></div>
+  <div class="ereason">理由：指标回答的是考核“什么”，标准回答的是应达到什么水平（指标值），题干把指标与标准的含义说反了。</div>
+</div><div class="errata-item fix">
+  <div class="ehead"><span class="eqn">判断 120</span><span class="ebadge fix">答案有误</span><a class="elink" href="#q-judge-119" onclick="location.href='index.html?q=judge-119';return false;">定位本题 ›</a></div>
+  <div class="estem">在采购订单数据分析报告中，可视化分析通常使用的工具包括 Matplotlib、Seaborn 等。</div>
+  <div class="erow"><span>官方答案：<b>错误</b></span><span class="earrow">→</span><span>建议答案：<b>正确</b></span></div>
+  <div class="ereason">理由：Matplotlib、Seaborn 正是数据分析中常用的可视化工具，题干表述正确，官方判“错误”有误。</div>
+</div><div class="errata-item fix">
+  <div class="ehead"><span class="eqn">判断 153</span><span class="ebadge fix">答案有误</span><a class="elink" href="#q-judge-152" onclick="location.href='index.html?q=judge-152';return false;">定位本题 ›</a></div>
+  <div class="estem">瓶颈工序前的非制约工序用倒排计划，瓶颈工序用顺排计划，后续工序按瓶颈工序的节拍组织生产。</div>
+  <div class="erow"><span>官方答案：<b>错误</b></span><span class="earrow">→</span><span>建议答案：<b>正确</b></span></div>
+  <div class="ereason">理由：OPT/DBR 中非制约工序按倒排（前拉）与瓶颈同步、瓶颈按有限能力顺排、后续工序按瓶颈节拍生产，题干表述正确。</div>
+</div><div class="errata-item fix">
+  <div class="ehead"><span class="eqn">判断 156</span><span class="ebadge fix">答案有误</span><a class="elink" href="#q-judge-155" onclick="location.href='index.html?q=judge-155';return false;">定位本题 ›</a></div>
+  <div class="estem">OPT 的倡导者强调，企业的真正目标是现在和未来都赚钱，因此在增加产销率的同时应减少库存和营运费用。</div>
+  <div class="erow"><span>官方答案：<b>错误</b></span><span class="earrow">→</span><span>建议答案：<b>正确</b></span></div>
+  <div class="ereason">理由：OPT 强调企业目标是现在和未来都赚钱，并以提高产销率、降低库存和营运费用为衡量与改进方向，题干正确。</div>
+</div><div class="errata-item fix">
+  <div class="ehead"><span class="eqn">判断 157</span><span class="ebadge fix">答案有误</span><a class="elink" href="#q-judge-156" onclick="location.href='index.html?q=judge-156';return false;">定位本题 ›</a></div>
+  <div class="estem">生产均衡化是指，工序间不设仓库，前一工序加工结束后，使半成品立即转移到下一工序去，装配线与机械加工几乎平行进行。</div>
+  <div class="erow"><span>官方答案：<b>正确</b></span><span class="earrow">→</span><span>建议答案：<b>错误</b></span></div>
+  <div class="ereason">理由：题干描述的是生产同步化（工序间不设仓库、一个流、平行作业），生产均衡化指品种与数量的均衡化（平均化）生产。</div>
+</div><div class="errata-item fix">
+  <div class="ehead"><span class="eqn">判断 159</span><span class="ebadge fix">答案有误</span><a class="elink" href="#q-judge-158" onclick="location.href='index.html?q=judge-158';return false;">定位本题 ›</a></div>
+  <div class="estem">客户要求追加订单数量或者减少订单数量时，需要变更生产计划。</div>
+  <div class="erow"><span>官方答案：<b>错误</b></span><span class="earrow">→</span><span>建议答案：<b>正确</b></span></div>
+  <div class="ereason">理由：客户追加或减少订单数量属于生产计划变更的典型触发情形，计划需相应变更，题干正确。</div>
+</div><div class="errata-item fix">
+  <div class="ehead"><span class="eqn">判断 160</span><span class="ebadge fix">答案有误</span><a class="elink" href="#q-judge-159" onclick="location.href='index.html?q=judge-159';return false;">定位本题 ›</a></div>
+  <div class="estem">生产计划变更不会对产品质量产生影响。</div>
+  <div class="erow"><span>官方答案：<b>正确</b></span><span class="earrow">→</span><span>建议答案：<b>错误</b></span></div>
+  <div class="ereason">理由：计划变更会引起赶工、换线、批量与排产调整，可能造成质量波动，说“不会对产品质量产生影响”明显错误。</div>
+</div><div class="errata-item fix">
+  <div class="ehead"><span class="eqn">判断 181</span><span class="ebadge fix">答案有误</span><a class="elink" href="#q-judge-180" onclick="location.href='index.html?q=judge-180';return false;">定位本题 ›</a></div>
+  <div class="estem">押运人员完成运输任务回场后，要及时向管理人员报告运输作业过程中的有关运输安全、质量方面的情况。</div>
+  <div class="erow"><span>官方答案：<b>错误</b></span><span class="earrow">→</span><span>建议答案：<b>正确</b></span></div>
+  <div class="ereason">理由：危险货物运输等作业规程明确要求押运人员完成任务回场后及时向管理人员报告运输安全、质量情况，题干正确。</div>
+</div><div class="errata-item fix">
+  <div class="ehead"><span class="eqn">单选 218</span><span class="ebadge fix">答案有误</span><a class="elink" href="#q-single-217" onclick="location.href='index.html?q=single-217';return false;">定位本题 ›</a></div>
+  <div class="estem">在库存管理中，ABC 分类法主要用于。</div>
+  <div class="erow"><span>官方答案：<b>B. 确定安全库存水平</b></span><span class="earrow">→</span><span>建议答案：<b>D. 控制库存成本</b></span></div>
+  <div class="ereason">理由：ABC 分类法按库存价值与品种分清主次、实施重点管理，目的是以较少的库存资金占用降低库存成本，官方答成“确定安全库存水平”不当。</div>
+</div><div class="errata-item fix">
+  <div class="ehead"><span class="eqn">单选 256</span><span class="ebadge fix">答案有误</span><a class="elink" href="#q-single-255" onclick="location.href='index.html?q=single-255';return false;">定位本题 ›</a></div>
+  <div class="estem">采购订单数据分析报告中，描述统计的主要目的是。</div>
+  <div class="erow"><span>官方答案：<b>C. 预测未来的采购趋势</b></span><span class="earrow">→</span><span>建议答案：<b>B. 概括和描述数据的基本特征</b></span></div>
+  <div class="ereason">理由：描述统计的目的是概括和描述数据的基本特征，预测未来趋势属推断统计/预测分析，官方答成 C 有误。</div>
+</div><div class="errata-item fix">
+  <div class="ehead"><span class="eqn">多选 180</span><span class="ebadge fix">答案有误</span><a class="elink" href="#q-multi-179" onclick="location.href='index.html?q=multi-179';return false;">定位本题 ›</a></div>
+  <div class="estem">影响库存控制决策的主要有。</div>
+  <div class="erow"><span>官方答案：<b>A. 需求特性因素　C. 服务水平　E. 订货成本</b></span><span class="earrow">→</span><span>建议答案：<b>A. 需求特性因素　C. 服务水平　D. 定货提前期　E. 订货成本</b></span></div>
+  <div class="ereason">理由：订货提前期（D）是决定订货点与安全库存的核心影响因素，官方漏选；需求特性、服务水平、订货成本均属主要因素。</div>
+</div><div class="errata-item fix">
+  <div class="ehead"><span class="eqn">多选 192</span><span class="ebadge fix">答案有误</span><a class="elink" href="#q-multi-191" onclick="location.href='index.html?q=multi-191';return false;">定位本题 ›</a></div>
+  <div class="estem">为了实现运输优化和有效控制，应对运输进行。</div>
+  <div class="erow"><span>官方答案：<b>A. 运输网络合理配置　B. 选择最佳运输方式　C. 提高运送效率　D. 实行商品单个专送</b></span><span class="earrow">→</span><span>建议答案：<b>A. 运输网络合理配置　B. 选择最佳运输方式　C. 提高运送效率　E. 降低运输费用</b></span></div>
+  <div class="ereason">理由：“实行商品单个专送”违背运输合理化（应集装化、合理配载），D 不应选；降低运输费用（E）才是运输优化控制的目标之一，官方答案两项皆有误。</div>
+</div><div class="errata-item fix">
+  <div class="ehead"><span class="eqn">多选 214</span><span class="ebadge fix">答案有误</span><a class="elink" href="#q-multi-213" onclick="location.href='index.html?q=multi-213';return false;">定位本题 ›</a></div>
+  <div class="estem">以下是物流标准化系统的特点是。</div>
+  <div class="erow"><span>官方答案：<b>A. 涉及面广　D. 体现科学性、民主性和经济性</b></span><span class="earrow">→</span><span>建议答案：<b>A. 涉及面广　C. 标准种类繁多　D. 体现科学性、民主性和经济性</b></span></div>
+  <div class="ereason">理由：物流标准化系统的特点包括涉及面广、标准种类繁多、体现科学性民主性和经济性，官方漏选 C。</div>
+</div><div class="errata-item doubt">
+  <div class="ehead"><span class="eqn">判断 96</span><span class="ebadge doubt">答案存疑</span><a class="elink" href="#q-judge-95" onclick="location.href='index.html?q=judge-95';return false;">定位本题 ›</a></div>
+  <div class="estem">RFM 模型中，Recency 指标越高表示顾客越活跃。</div>
+  <div class="erow"><span>官方答案：<b>正确</b></span><span class="earrow">·</span><span>处理：保留官方答案，标注存疑</span></div>
+  <div class="ereason">存疑原因：“Recency 指标越高”未说明是按评分还是按距上次交易的天数计量，两种口径下结论相反。</div>
+</div><div class="errata-item doubt">
+  <div class="ehead"><span class="eqn">判断 146</span><span class="ebadge doubt">答案存疑</span><a class="elink" href="#q-judge-145" onclick="location.href='index.html?q=judge-145';return false;">定位本题 ›</a></div>
+  <div class="estem">选择供应商需要权衡问题时，需要考虑信誉、交期、反应能力以及价格领导的指示。</div>
+  <div class="erow"><span>官方答案：<b>错误</b></span><span class="earrow">·</span><span>处理：保留官方答案，标注存疑</span></div>
+  <div class="ereason">存疑原因：“价格领导的指示”表述残缺且语义不通，无法判断该句是否成立。</div>
+</div><div class="errata-item doubt">
+  <div class="ehead"><span class="eqn">判断 209</span><span class="ebadge doubt">答案存疑</span><a class="elink" href="#q-judge-208" onclick="location.href='index.html?q=judge-208';return false;">定位本题 ›</a></div>
+  <div class="estem">鱼骨图在绘制时必须以影响因素为鱼骨。</div>
+  <div class="erow"><span>官方答案：<b>错误</b></span><span class="earrow">·</span><span>处理：保留官方答案，标注存疑</span></div>
+  <div class="ereason">存疑原因：“鱼骨”在不同资料中或指整条骨架、或专指主骨，且鱼骨图还有对策型、整理问题型，题干“必须”的表述不能唯一判定；按原因型鱼骨图通行画法，影响因素正是鱼骨，答案应为正确。</div>
+</div><div class="errata-item doubt">
+  <div class="ehead"><span class="eqn">单选 115</span><span class="ebadge doubt">答案存疑</span><a class="elink" href="#q-single-114" onclick="location.href='index.html?q=single-114';return false;">定位本题 ›</a></div>
+  <div class="estem">紧急情况应对的首要目标是。</div>
+  <div class="erow"><span>官方答案：<b>A. 尽快恢复业务正常运行</b></span><span class="earrow">·</span><span>处理：保留官方答案，标注存疑</span></div>
+  <div class="ereason">存疑原因：题干未界定“首要目标”是人员安全还是业务恢复，D同样符合应急管理以人为本的原则，答案不唯一，按供应链业务连续性语境取A。</div>
+</div><div class="errata-item doubt">
+  <div class="ehead"><span class="eqn">单选 137</span><span class="ebadge doubt">答案存疑</span><a class="elink" href="#q-single-136" onclick="location.href='index.html?q=single-136';return false;">定位本题 ›</a></div>
+  <div class="estem">需求影响因素包括方面。</div>
+  <div class="erow"><span>官方答案：<b>A. 社会文化</b></span><span class="earrow">·</span><span>处理：保留官方答案，标注存疑</span></div>
+  <div class="ereason">存疑原因：题干未限定分类维度，技术更新速度与资本市场变化同样是影响需求的因素，B、D均可成立。</div>
+</div><div class="errata-item doubt">
+  <div class="ehead"><span class="eqn">单选 199</span><span class="ebadge doubt">答案存疑</span><a class="elink" href="#q-single-198" onclick="location.href='index.html?q=single-198';return false;">定位本题 ›</a></div>
+  <div class="estem">根据库存保有时间长短，库存可以分为以下类型。</div>
+  <div class="erow"><span>官方答案：<b>A. 周转库存</b></span><span class="earrow">·</span><span>处理：保留官方答案，标注存疑</span></div>
+  <div class="ereason">存疑原因：按保有时间的划分口径不统一，且周转库存与循环库存是同一概念的重复选项，单选无唯一解，只能取最可能的周转库存。</div>
+</div><div class="errata-item doubt">
+  <div class="ehead"><span class="eqn">单选 200</span><span class="ebadge doubt">答案存疑</span><a class="elink" href="#q-single-199" onclick="location.href='index.html?q=single-199';return false;">定位本题 ›</a></div>
+  <div class="estem">库存按照存储位置分类，可以分为以下类型。</div>
+  <div class="erow"><span>官方答案：<b>C. 成品库存</b></span><span class="earrow">·</span><span>处理：保留官方答案，标注存疑</span></div>
+  <div class="ereason">存疑原因：按存储位置划分无统一口径，原材料库存与成品库存同属按生产阶段划分的类别，均可成立，单选不唯一。</div>
+</div><div class="errata-item doubt">
+  <div class="ehead"><span class="eqn">单选 214</span><span class="ebadge doubt">答案存疑</span><a class="elink" href="#q-single-213" onclick="location.href='index.html?q=single-213';return false;">定位本题 ›</a></div>
+  <div class="estem">数据集中趋势指标的主要作用是。</div>
+  <div class="erow"><span>官方答案：<b>D. 减少资金占用成本</b></span><span class="earrow">·</span><span>处理：保留官方答案，标注存疑</span></div>
+  <div class="ereason">存疑原因：题干问集中趋势指标的统计作用，四个选项却都是经营结果，D只是间接效果，A（提高周转率）同样成立，缺少唯一对应。</div>
+</div><div class="errata-item doubt">
+  <div class="ehead"><span class="eqn">单选 223</span><span class="ebadge doubt">答案存疑</span><a class="elink" href="#q-single-222" onclick="location.href='index.html?q=single-222';return false;">定位本题 ›</a></div>
+  <div class="estem">热力图常用于展示。</div>
+  <div class="erow"><span>官方答案：<b>C. 大数据集的关联性</b></span><span class="earrow">·</span><span>处理：保留官方答案，标注存疑</span></div>
+  <div class="ereason">存疑原因：热力图既可展示变量间关联强度，也常用于呈现空间密度分布，B与C均可成立，单选无唯一解。</div>
+</div><div class="errata-item doubt">
+  <div class="ehead"><span class="eqn">单选 262</span><span class="ebadge doubt">答案存疑</span><a class="elink" href="#q-single-261" onclick="location.href='index.html?q=single-261';return false;">定位本题 ›</a></div>
+  <div class="estem">在绘制雷达图时，数据点是如何连接的？</div>
+  <div class="erow"><span>官方答案：<b>D. 曲线连接</b></span><span class="earrow">·</span><span>处理：保留官方答案，标注存疑</span></div>
+  <div class="ereason">存疑原因：雷达图各数据点通常以直线段（折线）连成封闭多边形，官方“曲线连接”存疑，但 A 直线与 C 折线均可用以描述，无法唯一确定。</div>
+</div><div class="errata-item doubt">
+  <div class="ehead"><span class="eqn">单选 281</span><span class="ebadge doubt">答案存疑</span><a class="elink" href="#q-single-280" onclick="location.href='index.html?q=single-280';return false;">定位本题 ›</a></div>
+  <div class="estem">在供应商开发流程中,收集完供应商信息之后,应该进行的工作是。</div>
+  <div class="erow"><span>官方答案：<b>D. 询价</b></span><span class="earrow">·</span><span>处理：保留官方答案，标注存疑</span></div>
+  <div class="ereason">存疑原因：不同教材对供应商开发流程中“筛选”与“询价”的先后顺序表述不一，无法确证官方答案 D 有误。</div>
+</div><div class="errata-item doubt">
+  <div class="ehead"><span class="eqn">单选 321</span><span class="ebadge doubt">答案存疑</span><a class="elink" href="#q-single-320" onclick="location.href='index.html?q=single-320';return false;">定位本题 ›</a></div>
+  <div class="estem">关于约束理论 TOC，以下论述错误的是。</div>
+  <div class="erow"><span>官方答案：<b>D. 加工批量是固定不变的。</b></span><span class="earrow">·</span><span>处理：保留官方答案，标注存疑</span></div>
+  <div class="ereason">存疑原因：A项“平衡生产能力而非物流”与TOC“平衡物流而非生产能力”原则相反，本身也是错误表述，与D项并列，单选题干无法唯一作答。</div>
+</div><div class="errata-item doubt">
+  <div class="ehead"><span class="eqn">单选 393</span><span class="ebadge doubt">答案存疑</span><a class="elink" href="#q-single-392" onclick="location.href='index.html?q=single-392';return false;">定位本题 ›</a></div>
+  <div class="estem">保证货物运输的是反映道路运输企业运输质量的首要指标。</div>
+  <div class="erow"><span>官方答案：<b>D. 安全性</b></span><span class="earrow">·</span><span>处理：保留官方答案，标注存疑</span></div>
+  <div class="ereason">存疑原因：题干残缺，“保证货物运输的”后缺中心词（应为“安全”），也易被读成“保证货物运输及时”，单凭现有表述不能唯一确定。</div>
+</div><div class="errata-item doubt">
+  <div class="ehead"><span class="eqn">单选 401</span><span class="ebadge doubt">答案存疑</span><a class="elink" href="#q-single-400" onclick="location.href='index.html?q=single-400';return false;">定位本题 ›</a></div>
+  <div class="estem">保证货物运输的是反映道路运输企业运输质量的首要指标。</div>
+  <div class="erow"><span>官方答案：<b>A. 安全性</b></span><span class="earrow">·</span><span>处理：保留官方答案，标注存疑</span></div>
+  <div class="ereason">存疑原因：题干残缺，“保证货物运输的”后缺中心词（应为“安全”），与选项“安全性”重复，表述不完整，属题干残缺。</div>
+</div><div class="errata-item doubt">
+  <div class="ehead"><span class="eqn">单选 406</span><span class="ebadge doubt">答案存疑</span><a class="elink" href="#q-single-405" onclick="location.href='index.html?q=single-405';return false;">定位本题 ›</a></div>
+  <div class="estem">现场标准化作业是规范作业现场的有效途径。</div>
+  <div class="erow"><span>官方答案：<b>A. 作业标准化、管理精益化、安全常态化</b></span><span class="earrow">·</span><span>处理：保留官方答案，标注存疑</span></div>
+  <div class="ereason">存疑原因：题干只有判断句，缺少“包括什么/通过哪些途径”等设问，B、C、D也可与标准化作业搭接，无法唯一确定要选哪一项。</div>
+</div><div class="errata-item doubt">
+  <div class="ehead"><span class="eqn">多选 2</span><span class="ebadge doubt">答案存疑</span><a class="elink" href="#q-multi-1" onclick="location.href='index.html?q=multi-1';return false;">定位本题 ›</a></div>
+  <div class="estem">道德在社会中的作用表现在。</div>
+  <div class="erow"><span>官方答案：<b>A. 规范个体行为　B. 强化社会正义感　D. 增强社会凝聚力</b></span><span class="earrow">·</span><span>处理：保留官方答案，标注存疑</span></div>
+  <div class="ereason">存疑原因：E“降低法律的实施成本”亦可视为道德的社会作用，是否应入选存在分歧，官方答案ABD未必完整，答案不唯一</div>
+</div><div class="errata-item doubt">
+  <div class="ehead"><span class="eqn">多选 18</span><span class="ebadge doubt">答案存疑</span><a class="elink" href="#q-multi-17" onclick="location.href='index.html?q=multi-17';return false;">定位本题 ›</a></div>
+  <div class="estem">推式供应链的特点包括。</div>
+  <div class="erow"><span>官方答案：<b>A. 根据市场需求预测进行生产和库存管理　C. 常伴有大量库存存储</b></span><span class="earrow">·</span><span>处理：保留官方答案，标注存疑</span></div>
+  <div class="ereason">存疑原因：D把响应滞后列为推式链特点并无不当，与拉式题的选项设置不对称，官方答案AC是否漏选D存在歧义。</div>
+</div><div class="errata-item doubt">
+  <div class="ehead"><span class="eqn">多选 59</span><span class="ebadge doubt">答案存疑</span><a class="elink" href="#q-multi-58" onclick="location.href='index.html?q=multi-58';return false;">定位本题 ›</a></div>
+  <div class="estem">以下是常见的供应链风险问题。</div>
+  <div class="erow"><span>官方答案：<b>A. 业务场景分析滞后　B. 物料需求与排产计划调整不及时　D. 资产透明度缺乏</b></span><span class="earrow">·</span><span>处理：保留官方答案，标注存疑</span></div>
+  <div class="ereason">存疑原因：库存过剩、端到端库存透明度下降也属常见供应链风险问题，与入选项界限不清，答案不唯一。</div>
+</div><div class="errata-item doubt">
+  <div class="ehead"><span class="eqn">多选 101</span><span class="ebadge doubt">答案存疑</span><a class="elink" href="#q-multi-100" onclick="location.href='index.html?q=multi-100';return false;">定位本题 ›</a></div>
+  <div class="estem">在数据分析报告的基本构架中，通常包含了对数据分析结果的详细解释和讨论。</div>
+  <div class="erow"><span>官方答案：<b>C. 数据分析方法和结果　D. 结论和建议　E. 局限性和改进方向</b></span><span class="earrow">·</span><span>处理：保留官方答案，标注存疑</span></div>
+  <div class="ereason">存疑原因：题干是陈述句而非提问，无法确定应选报告全部组成部分还是仅“结果解释与讨论”部分，各选项去留存在歧义</div>
+</div><div class="errata-item doubt">
+  <div class="ehead"><span class="eqn">多选 151</span><span class="ebadge doubt">答案存疑</span><a class="elink" href="#q-multi-150" onclick="location.href='index.html?q=multi-150';return false;">定位本题 ›</a></div>
+  <div class="estem">的说法是不正确的。</div>
+  <div class="erow"><span>官方答案：<b>A. 生产按专业化程度可分为加工装配型生产和流程型生产。　B. 流程型生产的生产过程中的协作关系十分复杂。　D. 加工装配型生产包括化工、冶金等。　E. 离散型生产过程不连续。</b></span><span class="earrow">·</span><span>处理：保留官方答案，标注存疑</span></div>
+  <div class="ereason">存疑原因：题干缺少主语（“的说法是不正确的”被截断），且E“离散型生产过程不连续”表述正确不应入选，官方答案ABDE中的E有误，最可能答案是ABD。</div>
+</div><div class="errata-item doubt">
+  <div class="ehead"><span class="eqn">多选 174</span><span class="ebadge doubt">答案存疑</span><a class="elink" href="#q-multi-173" onclick="location.href='index.html?q=multi-173';return false;">定位本题 ›</a></div>
+  <div class="estem">库存管理过程包括等过程。</div>
+  <div class="erow"><span>官方答案：<b>A. 确定需求　B. 存货识别与编码　C. 服务水平与安全库存的确定　D. 采购提前期管理</b></span><span class="earrow">·</span><span>处理：保留官方答案，标注存疑</span></div>
+  <div class="ereason">存疑原因：库存管理过程为确定需求、存货识别与编码、服务水平与安全库存的确定、订货批量与订购时间的确定、订货提前期管理，官方漏选 E。</div>
+</div><div class="errata-item doubt">
+  <div class="ehead"><span class="eqn">多选 200</span><span class="ebadge doubt">答案存疑</span><a class="elink" href="#q-multi-199" onclick="location.href='index.html?q=multi-199';return false;">定位本题 ›</a></div>
+  <div class="estem">权重确定的具体方法有。</div>
+  <div class="erow"><span>官方答案：<b>A. 分配关键绩效指标和工作目标完成效果之间的权重　B. 主管人员依据个人经验分配权重　C. 确定各项关键绩效指标的权重</b></span><span class="earrow">·</span><span>处理：保留官方答案，标注存疑</span></div>
+  <div class="ereason">存疑原因：题干问“具体方法”，但A、C、E是权重分配的内容和步骤，B、D才是方法，题干与选项不匹配，答案无法唯一确定</div>
+</div>
+</div>
+</div>
+</body>
+</html>

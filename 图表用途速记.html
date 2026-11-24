@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>图表用途速记表 · 供应链数据分析</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--line:#e3e6ea;--tx:#1f2328;--tx2:#5b6470;--tx3:#8b95a1;--brand:#2b5cd9;--soft:#eef3ff;--warn:#a8690a;--warnbg:#fdf3e3}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",Arial,sans-serif;font-size:15px;line-height:1.7;-webkit-font-smoothing:antialiased}
+.wrap{max-width:960px;margin:0 auto;padding:22px 16px 80px}
+h1{font-size:22px;margin:0 0 6px}
+h2{font-size:18px;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid var(--brand)}
+.sub{color:var(--tx2);font-size:13px;margin:0 0 18px}
+table{width:100%;border-collapse:collapse;background:var(--card);border-radius:12px;overflow:hidden;font-size:14px}
+th,td{padding:9px 12px;text-align:left;border-bottom:1px solid var(--line)}
+th{background:var(--soft);color:var(--brand);font-size:13px}
+tr:last-child td{border-bottom:none}
+td:nth-child(1){white-space:nowrap;width:88px}
+td:nth-child(3){color:var(--brand);font-size:13px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px;text-align:center}
+.ctitle{font-weight:700;font-size:15px;margin-bottom:6px}
+.cimg{background:#fbfcfe;border:1px solid var(--line2,#eef0f3);border-radius:8px;padding:6px;margin-bottom:8px}
+.cimg svg{width:100%;max-width:200px;height:auto}
+.cuse{font-size:12.5px;color:var(--tx2);min-height:34px}
+.cnemo{font-size:12.5px;color:var(--brand);background:var(--soft);border-radius:6px;padding:4px 6px;margin-top:6px}
+.plain{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--brand);border-radius:10px;padding:12px 14px;margin:12px 0;font-size:14px}
+ul{margin:8px 0;padding-left:22px}
+li{margin:4px 0}
+ol{margin:8px 0;padding-left:22px}
+.quote{background:var(--warnbg);border:1px solid #f0d7a8;color:#8a5a08;border-radius:10px;padding:11px 14px;margin:14px 0;font-size:14px}
+.tip{background:#fff4e6;border-left:4px solid var(--warn);border-radius:8px;padding:10px 14px;margin-top:14px;font-size:14px}
+@media(max-width:600px){.grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}td:nth-child(2){font-size:13px}}
+@media print{body{background:#fff}.card,table{break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>图表用途速记表</h1>
+<p class="sub">适配供应链可视化考题 · 12 种图表逐图配示意图</p>
+
+<h2>💡 图表用途速记表</h2>
+<table>
+<thead><tr><th>图表</th><th>核心用途</th><th>口诀</th></tr></thead>
+<tbody>
+<tr><td><b>条形图</b></td><td>不同类别数值对比</td><td><b>类别对比用条形</b></td></tr>
+<tr><td><b>折线图</b></td><td>时间序列、趋势变化</td><td><b>趋势变化看折线</b></td></tr>
+<tr><td><b>饼图</b></td><td>各部分占总体比例</td><td><b>占比构成看饼图</b></td></tr>
+<tr><td><b>散点图</b></td><td>两个变量相关性、数据分布趋势</td><td><b>变量相关找散点</b></td></tr>
+<tr><td><b>直方图</b></td><td>单组数据频次分布、数值范围</td><td><b>数据分布直方图</b></td></tr>
+<tr><td><b>箱线图</b></td><td>四分位数、中位数、识别异常值</td><td><b>异常极值箱线图</b></td></tr>
+<tr><td><b>帕累托图</b></td><td>分类占比排序，抓80/20关键因素</td><td><b>主次因素帕累托</b></td></tr>
+<tr><td><b>雷达图</b></td><td>多维度指标对比（多维度能力）</td><td><b>多维对比雷达图</b></td></tr>
+<tr><td><b>热力图</b></td><td>多变量相关性强弱（大数据关联）</td><td><b>变量关联热力图</b></td></tr>
+<tr><td><b>气泡图</b></td><td>3个维度：X、Y、气泡大小</td><td><b>三维信息气泡图</b></td></tr>
+<tr><td><b>词云图</b></td><td>文本词频高低</td><td><b>文字频次词云图</b></td></tr>
+<tr><td><b>玫瑰图</b></td><td>分类占比（环形饼图变体）</td><td><b>环形占比玫瑰图</b></td></tr>
+</tbody>
+</table>
+
+<h2>逐图示意图</h2>
+<div class="grid">
+<div class="card">
+  <div class="ctitle">条形图</div>
+  <div class="cimg"><svg viewBox="0 0 200 120" preserveAspectRatio="xMidYMid meet"><line x1="26" y1="100" x2="190" y2="100" stroke="#c9d2e0"/><line x1="26" y1="18" x2="26" y2="100" stroke="#c9d2e0"/><rect x="44" y="52" width="30" height="48" fill="#2b5cd9" rx="2"/><rect x="90" y="28" width="30" height="72" fill="#2b5cd9" rx="2"/><rect x="136" y="66" width="30" height="34" fill="#2b5cd9" rx="2"/><text x="59" y="114" font-size="11" fill="#5b6470" text-anchor="middle">A</text><text x="105" y="114" font-size="11" fill="#5b6470" text-anchor="middle">B</text><text x="151" y="114" font-size="11" fill="#5b6470" text-anchor="middle">C</text></svg></div>
+  <div class="cnemo">类别对比用条形</div>
+</div>
+<div class="card">
+  <div class="ctitle">折线图</div>
+  <div class="cimg"><svg viewBox="0 0 200 120" preserveAspectRatio="xMidYMid meet"><line x1="26" y1="100" x2="190" y2="100" stroke="#c9d2e0"/><line x1="26" y1="18" x2="26" y2="100" stroke="#c9d2e0"/><polyline points="34,82 70,54 106,68 142,32 182,44" fill="none" stroke="#2b5cd9" stroke-width="2.5" stroke-linejoin="round"/><circle cx="34" cy="82" r="3" fill="#2b5cd9"/><circle cx="70" cy="54" r="3" fill="#2b5cd9"/><circle cx="106" cy="68" r="3" fill="#2b5cd9"/><circle cx="142" cy="32" r="3" fill="#2b5cd9"/><circle cx="182" cy="44" r="3" fill="#2b5cd9"/><text x="30" y="114" font-size="10" fill="#8b95a1">t1</text><text x="172" y="114" font-size="10" fill="#8b95a1">t5</text></svg></div>
+  <div class="cnemo">趋势变化看折线</div>
+</div>
+<div class="card">
+  <div class="ctitle">饼图</div>
+  <div class="cimg"><svg viewBox="0 0 200 120" preserveAspectRatio="xMidYMid meet"><path d="M100,58 L100.0,16.0 A42,42 0 0,1 113.0,97.9 Z" fill="#2b5cd9" stroke="#fff" stroke-width="1.5"/><path d="M100,58 L113.0,97.9 A42,42 0 0,1 58.0,58.0 Z" fill="#7aa0ec" stroke="#fff" stroke-width="1.5"/><path d="M100,58 L58.0,58.0 A42,42 0 0,1 100.0,16.0 Z" fill="#c3d4f7" stroke="#fff" stroke-width="1.5"/></svg></div>
+  <div class="cnemo">占比构成看饼图</div>
+</div>
+<div class="card">
+  <div class="ctitle">散点图</div>
+  <div class="cimg"><svg viewBox="0 0 200 120" preserveAspectRatio="xMidYMid meet"><line x1="26" y1="100" x2="190" y2="100" stroke="#c9d2e0"/><line x1="26" y1="18" x2="26" y2="100" stroke="#c9d2e0"/><line x1="40" y1="90" x2="175" y2="32" stroke="#e8a94a" stroke-width="1.5" stroke-dasharray="4 3"/><circle cx="44" cy="86" r="3.5" fill="#2b5cd9" opacity=".85"/><circle cx="58" cy="79" r="3.5" fill="#2b5cd9" opacity=".85"/><circle cx="72" cy="72" r="3.5" fill="#2b5cd9" opacity=".85"/><circle cx="88" cy="62" r="3.5" fill="#2b5cd9" opacity=".85"/><circle cx="104" cy="64" r="3.5" fill="#2b5cd9" opacity=".85"/><circle cx="120" cy="50" r="3.5" fill="#2b5cd9" opacity=".85"/><circle cx="136" cy="44" r="3.5" fill="#2b5cd9" opacity=".85"/><circle cx="152" cy="36" r="3.5" fill="#2b5cd9" opacity=".85"/><circle cx="168" cy="30" r="3.5" fill="#2b5cd9" opacity=".85"/><text x="170" y="114" font-size="10" fill="#8b95a1">X</text><text x="12" y="24" font-size="10" fill="#8b95a1">Y</text></svg></div>
+  <div class="cnemo">变量相关找散点</div>
+</div>
+<div class="card">
+  <div class="ctitle">直方图</div>
+  <div class="cimg"><svg viewBox="0 0 200 120" preserveAspectRatio="xMidYMid meet"><line x1="26" y1="100" x2="190" y2="100" stroke="#c9d2e0"/><line x1="26" y1="18" x2="26" y2="100" stroke="#c9d2e0"/><rect x="30" y="78" width="17" height="22" fill="#2b5cd9" opacity=".9"/><rect x="47" y="64" width="17" height="36" fill="#2b5cd9" opacity=".9"/><rect x="64" y="46" width="17" height="54" fill="#2b5cd9" opacity=".9"/><rect x="81" y="28" width="17" height="72" fill="#2b5cd9" opacity=".9"/><rect x="98" y="14" width="17" height="86" fill="#2b5cd9" opacity=".9"/><rect x="115" y="26" width="17" height="74" fill="#2b5cd9" opacity=".9"/><rect x="132" y="44" width="17" height="56" fill="#2b5cd9" opacity=".9"/><rect x="149" y="62" width="17" height="38" fill="#2b5cd9" opacity=".9"/><rect x="166" y="76" width="17" height="24" fill="#2b5cd9" opacity=".9"/></svg></div>
+  <div class="cnemo">数据分布直方图</div>
+</div>
+<div class="card">
+  <div class="ctitle">箱线图</div>
+  <div class="cimg"><svg viewBox="0 0 200 120" preserveAspectRatio="xMidYMid meet"><line x1="26" y1="100" x2="190" y2="100" stroke="#c9d2e0"/><line x1="26" y1="18" x2="26" y2="100" stroke="#c9d2e0"/><line x1="52" y1="34" x2="52" y2="94" stroke="#2b5cd9" stroke-width="1.5"/><line x1="40" y1="34" x2="64" y2="34" stroke="#2b5cd9" stroke-width="1.5"/><line x1="40" y1="94" x2="64" y2="94" stroke="#2b5cd9" stroke-width="1.5"/><rect x="70" y="50" width="62" height="34" fill="#2b5cd9" opacity=".18" stroke="#2b5cd9" stroke-width="1.5"/><line x1="70" y1="66" x2="132" y2="66" stroke="#2b5cd9" stroke-width="2"/><line x1="132" y1="50" x2="132" y2="30" stroke="#2b5cd9" stroke-width="1.5"/><line x1="122" y1="30" x2="142" y2="30" stroke="#2b5cd9" stroke-width="1.5"/><circle cx="160" cy="26" r="4" fill="#e8a94a"/><circle cx="168" cy="34" r="4" fill="#e8a94a"/></svg></div>
+  <div class="cnemo">异常极值箱线图</div>
+</div>
+<div class="card">
+  <div class="ctitle">帕累托图</div>
+  <div class="cimg"><svg viewBox="0 0 200 120" preserveAspectRatio="xMidYMid meet"><line x1="26" y1="100" x2="190" y2="100" stroke="#c9d2e0"/><line x1="26" y1="18" x2="26" y2="100" stroke="#c9d2e0"/><rect x="38" y="22" width="18" height="78" fill="#2b5cd9" opacity=".85"/><rect x="62" y="48" width="18" height="52" fill="#2b5cd9" opacity=".85"/><rect x="86" y="70" width="18" height="30" fill="#2b5cd9" opacity=".85"/><rect x="110" y="82" width="18" height="18" fill="#2b5cd9" opacity=".85"/><rect x="134" y="90" width="18" height="10" fill="#2b5cd9" opacity=".85"/><rect x="158" y="94" width="18" height="6" fill="#2b5cd9" opacity=".85"/><polyline points="47,75 71,45 95,24 119,12 143,5 167,1" fill="none" stroke="#e8a94a" stroke-width="2"/><circle cx="47" cy="75" r="2.5" fill="#e8a94a"/><circle cx="71" cy="45" r="2.5" fill="#e8a94a"/><circle cx="95" cy="24" r="2.5" fill="#e8a94a"/><circle cx="119" cy="12" r="2.5" fill="#e8a94a"/><circle cx="143" cy="5" r="2.5" fill="#e8a94a"/><circle cx="167" cy="1" r="2.5" fill="#e8a94a"/></svg></div>
+  <div class="cnemo">主次因素帕累托</div>
+</div>
+<div class="card">
+  <div class="ctitle">雷达图</div>
+  <div class="cimg"><svg viewBox="0 0 200 120" preserveAspectRatio="xMidYMid meet"><polygon points="100.0,46.1 112.0,53.1 112.0,66.9 100.0,73.9 88.0,66.9 88.0,53.1" fill="none" stroke="#c9d2e0" stroke-width="1"/><polygon points="100.0,32.3 124.0,46.1 124.0,73.9 100.0,87.7 76.0,73.9 76.0,46.1" fill="none" stroke="#c9d2e0" stroke-width="1"/><polygon points="100.0,18.0 136.4,39.0 136.4,81.0 100.0,102.0 63.6,81.0 63.6,39.0" fill="none" stroke="#c9d2e0" stroke-width="1"/><line x1="100" y1="60" x2="100.0" y2="18.0" stroke="#c9d2e0"/><line x1="100" y1="60" x2="136.4" y2="39.0" stroke="#c9d2e0"/><line x1="100" y1="60" x2="136.4" y2="81.0" stroke="#c9d2e0"/><line x1="100" y1="60" x2="100.0" y2="102.0" stroke="#c9d2e0"/><line x1="100" y1="60" x2="63.6" y2="81.0" stroke="#c9d2e0"/><line x1="100" y1="60" x2="63.6" y2="39.0" stroke="#c9d2e0"/><polygon points="100.0,22.2 123.6,46.4 129.1,76.8 100.0,81.0 72.7,75.8 78.2,47.4" fill="#2b5cd9" fill-opacity=".28" stroke="#2b5cd9" stroke-width="2"/></svg></div>
+  <div class="cnemo">多维对比雷达图</div>
+</div>
+<div class="card">
+  <div class="ctitle">热力图</div>
+  <div class="cimg"><svg viewBox="0 0 200 120" preserveAspectRatio="xMidYMid meet"><rect x="48" y="20" width="28" height="22" fill="#2b5cd9" opacity="0.90" stroke="#fff"/><rect x="77" y="20" width="28" height="22" fill="#2b5cd9" opacity="0.65" stroke="#fff"/><rect x="106" y="20" width="28" height="22" fill="#2b5cd9" opacity="0.40" stroke="#fff"/><rect x="135" y="20" width="28" height="22" fill="#2b5cd9" opacity="0.40" stroke="#fff"/><rect x="48" y="43" width="28" height="22" fill="#2b5cd9" opacity="0.65" stroke="#fff"/><rect x="77" y="43" width="28" height="22" fill="#2b5cd9" opacity="0.90" stroke="#fff"/><rect x="106" y="43" width="28" height="22" fill="#2b5cd9" opacity="0.65" stroke="#fff"/><rect x="135" y="43" width="28" height="22" fill="#2b5cd9" opacity="0.40" stroke="#fff"/><rect x="48" y="66" width="28" height="22" fill="#2b5cd9" opacity="0.40" stroke="#fff"/><rect x="77" y="66" width="28" height="22" fill="#2b5cd9" opacity="0.65" stroke="#fff"/><rect x="106" y="66" width="28" height="22" fill="#2b5cd9" opacity="0.90" stroke="#fff"/><rect x="135" y="66" width="28" height="22" fill="#2b5cd9" opacity="0.65" stroke="#fff"/><rect x="48" y="89" width="28" height="22" fill="#2b5cd9" opacity="0.40" stroke="#fff"/><rect x="77" y="89" width="28" height="22" fill="#2b5cd9" opacity="0.40" stroke="#fff"/><rect x="106" y="89" width="28" height="22" fill="#2b5cd9" opacity="0.65" stroke="#fff"/><rect x="135" y="89" width="28" height="22" fill="#2b5cd9" opacity="0.90" stroke="#fff"/><text x="62" y="16" font-size="9" fill="#8b95a1" text-anchor="middle">V1</text><text x="91" y="16" font-size="9" fill="#8b95a1" text-anchor="middle">V2</text><text x="120" y="16" font-size="9" fill="#8b95a1" text-anchor="middle">V3</text><text x="149" y="16" font-size="9" fill="#8b95a1" text-anchor="middle">V4</text></svg></div>
+  <div class="cnemo">变量关联热力图</div>
+</div>
+<div class="card">
+  <div class="ctitle">气泡图</div>
+  <div class="cimg"><svg viewBox="0 0 200 120" preserveAspectRatio="xMidYMid meet"><line x1="26" y1="100" x2="190" y2="100" stroke="#c9d2e0"/><line x1="26" y1="18" x2="26" y2="100" stroke="#c9d2e0"/><circle cx="52" cy="84" r="7" fill="#2b5cd9" fill-opacity=".35" stroke="#2b5cd9" stroke-width="1.5"/><circle cx="78" cy="70" r="12" fill="#2b5cd9" fill-opacity=".35" stroke="#2b5cd9" stroke-width="1.5"/><circle cx="104" cy="60" r="6" fill="#2b5cd9" fill-opacity=".35" stroke="#2b5cd9" stroke-width="1.5"/><circle cx="130" cy="44" r="16" fill="#2b5cd9" fill-opacity=".35" stroke="#2b5cd9" stroke-width="1.5"/><circle cx="160" cy="32" r="10" fill="#2b5cd9" fill-opacity=".35" stroke="#2b5cd9" stroke-width="1.5"/></svg></div>
+  <div class="cnemo">三维信息气泡图</div>
+</div>
+<div class="card">
+  <div class="ctitle">词云图</div>
+  <div class="cimg"><svg viewBox="0 0 200 120" preserveAspectRatio="xMidYMid meet"><text x="100" y="38" font-size="26" fill="#2b5cd9" text-anchor="middle" font-weight="600">供应链</text><text x="55" y="66" font-size="20" fill="#7aa0ec" text-anchor="middle" font-weight="600">库存</text><text x="142" y="60" font-size="17" fill="#2b5cd9" text-anchor="middle" font-weight="600">采购</text><text x="75" y="88" font-size="14" fill="#7aa0ec" text-anchor="middle" font-weight="600">物流</text><text x="152" y="90" font-size="12" fill="#5b6470" text-anchor="middle" font-weight="600">需求</text><text x="40" y="98" font-size="11" fill="#8b95a1" text-anchor="middle" font-weight="600">成本</text><text x="120" y="100" font-size="10" fill="#8b95a1" text-anchor="middle" font-weight="600">风险</text></svg></div>
+  <div class="cnemo">文字频次词云图</div>
+</div>
+<div class="card">
+  <div class="ctitle">玫瑰图</div>
+  <div class="cimg"><svg viewBox="0 0 200 120" preserveAspectRatio="xMidYMid meet"><path d="M100,60 L100.0,18.0 A42,42 0 0,1 136.4,39.0 Z" fill="#2b5cd9" fill-opacity="0.35" stroke="#fff" stroke-width="1"/><path d="M100,60 L127.7,44.0 A32,32 0 0,1 127.7,76.0 Z" fill="#2b5cd9" fill-opacity="0.45999999999999996" stroke="#fff" stroke-width="1"/><path d="M100,60 L132.9,79.0 A38,38 0 0,1 100.0,98.0 Z" fill="#2b5cd9" fill-opacity="0.57" stroke="#fff" stroke-width="1"/><path d="M100,60 L100.0,84.0 A24,24 0 0,1 79.2,72.0 Z" fill="#2b5cd9" fill-opacity="0.6799999999999999" stroke="#fff" stroke-width="1"/><path d="M100,60 L70.6,77.0 A34,34 0 0,1 70.6,43.0 Z" fill="#2b5cd9" fill-opacity="0.79" stroke="#fff" stroke-width="1"/><path d="M100,60 L82.7,50.0 A20,20 0 0,1 100.0,40.0 Z" fill="#2b5cd9" fill-opacity="0.9" stroke="#fff" stroke-width="1"/></svg></div>
+  <div class="cnemo">环形占比玫瑰图</div>
+</div>
+</div>
+
+<h2>按需求找图表（速查）</h2>
+<table>
+<thead><tr><th>看到需求</th><th>用什么图</th></tr></thead>
+<tbody>
+<tr><td>比大小（类别之间谁大谁小）</td><td><b>条形图</b></td></tr>
+<tr><td>看走势 / 时间变化（时间、需求、库存随时间）</td><td><b>折线图</b></td></tr>
+<tr><td>看占比 / 构成</td><td><b>饼图</b></td></tr>
+<tr><td>看两个变量有没有相关</td><td><b>散点图</b></td></tr>
+<tr><td>看一堆数据本身怎么分布、数值范围</td><td><b>直方图</b></td></tr>
+<tr><td>找异常值</td><td><b>箱线图</b></td></tr>
+<tr><td>找主要问题（80/20、ABC分类）</td><td><b>帕累托图</b></td></tr>
+<tr><td>多个指标一起打分对比</td><td><b>雷达图</b></td></tr>
+<tr><td>很多变量互相之间关联强弱</td><td><b>热力图</b></td></tr>
+</tbody>
+</table>
+<div class="tip">最容易混：<b>折线（时间趋势）vs 散点（变量相关）</b> —— 一个是时间轴，一个是两个变量。</div>
+
+
+<h2>高频排序（供应链 / 库存数据分析）</h2>
+<div class="plain">结合<b>供应链/库存数据分析考题</b>，高频排序（最常考 → 次常用）：
+<ol>
+<li><b>折线图</b> —— 时间 / 需求 / 库存趋势（考最多）</li>
+<li><b>条形图</b> —— 物料、仓库指标对比</li>
+<li><b>散点图</b> —— 两变量相关性</li>
+<li><b>热力图</b> —— 多变量相关矩阵</li>
+<li><b>饼图</b> —— 占比结构</li>
+<li><b>直方图</b> —— 数据频次分布</li>
+<li><b>箱线图</b> —— 异常值、离散情况</li>
+<li><b>帕累托图</b> —— ABC 分类、80/20</li>
+</ol>
+</div>
+
+</div>
+</body>
+</html>
